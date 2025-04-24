@@ -11,4 +11,20 @@
         <maven.compiler.target>21</maven.compiler.target>
         <exec.mainClass>com.mycompany.projets2.ProjetS2</exec.mainClass>
     </properties>
+    
+    <dependencies>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>17.0.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>17.0.1</version>
+    </dependency>
+</dependencies>
+
 </project>
+
