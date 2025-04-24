@@ -8,6 +8,10 @@
  *
  * @author benjamin
  */
+
+import com.mycompany.projets2.Equipement;
+import java.util.*;
+
 public class Atelier {
     
     private ChefAtelier CA;
