@@ -8,13 +8,13 @@
  *
  * @author benjamin
  */
-//public class Machine extends Equipement {
+public class Machine extends Equipement {
     
-    //private String refMchine;
-    //private String dMachine;
-    //private String type;
-    //private float cout;
-    //private float x;
-    //private float y;
+    private String refMchine;
+    private String dMachine;
+    private String type;
+    private float cout;
+    private float x;
+    private float y;
     
-//}
+}

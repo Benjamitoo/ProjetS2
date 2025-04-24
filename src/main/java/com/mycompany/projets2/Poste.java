@@ -8,10 +8,10 @@
  *
  * @author benjamin
  */
-//public class Poste extends Equipement {
+public class Poste extends Equipement {
     
-  //  private String refPoste;
-   // private String dPoste;
-    //private ArrayList<Machine> listeMachines;    
+    private String refPoste;
+    private String dPoste;
+    private ArrayList<Machine> listeMachines;    
     
 //}

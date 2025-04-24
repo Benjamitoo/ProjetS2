@@ -8,6 +8,6 @@
  *
  * @author benjamin
  */
-//public class Operateur extends Personne {
+public class Operateur extends Personne {
     
-//}
+}

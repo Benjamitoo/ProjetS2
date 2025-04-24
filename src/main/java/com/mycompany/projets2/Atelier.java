@@ -10,7 +10,7 @@
  */
 public class Atelier {
     
-  //  private ChefAtelier CA;
-    //private ArrayList<Equipement> listeEquipement;
+    private ChefAtelier CA;
+    private ArrayList<Equipement> listeEquipement;
     
 }

@@ -8,6 +8,6 @@
  *
  * @author benjamin
  */
-//public class ChefAtelier extends Personne {
+public class ChefAtelier extends Personne {
     
-//}
+}
