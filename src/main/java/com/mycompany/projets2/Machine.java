@@ -10,15 +10,15 @@
  */
 public class Machine extends Equipement {
     
-    private String refMchine;
+    private String refMachine;
     private String dMachine;
     private String type;
     private float cout;
     private float x;
     private float y;
 
-    public String getRefMchine() {
-        return refMchine;
+    public String getRefMachine() {
+        return refMachine;
     }
 
     public String getdMachine() {
@@ -41,8 +41,8 @@ public class Machine extends Equipement {
         return y;
     }
 
-    public void setRefMchine(String refMchine) {
-        this.refMchine = refMchine;
+    public void setRefMachine(String refMchine) {
+        this.refMachine = refMachine;
     }
 
     public void setdMachine(String dMachine) {
