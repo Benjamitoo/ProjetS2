@@ -1,4 +1,4 @@
-package com.mycompany.projets2;
+package controleurs;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

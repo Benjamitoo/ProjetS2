@@ -36,7 +36,7 @@ public class Gamme {
     }
     
     public void modifier(){
-        ModGamWin fen = new ModGamWin(this);
+        vue.ModGamWin fen = new vue.ModGamWin(this);
     }
     
     public String getRef() {

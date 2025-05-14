@@ -32,7 +32,7 @@ public class ModGamWin extends JFrame  implements ActionListener{
 
 		
 		
-		public ModGamWin(Gamme gamme){             
+		public ModGamWin(modele.Gamme gamme){             
                     this.setTitle(gamme.getRef());
 		    this.setSize(600, 300);
 		    this.setLocation(900, 200); 

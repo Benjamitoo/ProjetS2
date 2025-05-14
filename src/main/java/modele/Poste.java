@@ -10,7 +10,7 @@ package modele;
  *
  * @author benjamin
  */
-import com.mycompany.projets2.Equipement;
+
 import java.util.*;
 
 public class Poste extends Equipement {
