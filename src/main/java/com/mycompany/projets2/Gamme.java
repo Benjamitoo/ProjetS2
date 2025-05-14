@@ -26,6 +26,15 @@ public class Gamme {
         this.materiel = materiel;
     }
     
+    public String affiche(){
+        String s = "";
+        Iterator i = this.protocole.iterator();
+        while(i.hasNext()){
+            s = s + i.next() + " -> "; 
+        }
+        return s;
+    }
+    
     public void modifier(){
         ModGamWin fen = new ModGamWin(this);
     }

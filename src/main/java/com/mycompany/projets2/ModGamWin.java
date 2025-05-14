@@ -24,9 +24,11 @@ public class ModGamWin extends JFrame  implements ActionListener{
 		//fenêtre de réponse du mode Lettres d'un joueur
 		
 		
-		private JButton ajout = new JButton("Ajouter");
+		private JButton ajoutPrem = new JButton("Ajouter au début");
+                private JButton ajoutDer = new JButton("Ajouter à la fin");
                 private JButton supp = new JButton("Supprimer");
                 private JLabel titre = new JLabel();
+                private JLabel affiche = new JLabel();
 
 		
 		
@@ -36,6 +38,7 @@ public class ModGamWin extends JFrame  implements ActionListener{
 		    this.setLocation(900, 200); 
                     
                     this.titre.setText("Machine " + gamme.getRef());
+                    this.affiche.setText(gamme.affiche());
 		    
 	
 		    
@@ -47,11 +50,15 @@ public class ModGamWin extends JFrame  implements ActionListener{
 		    pan.setBackground(Color.WHITE);
 		    pan.setLayout(new BorderLayout());
 		    pan.add(titre, BorderLayout.NORTH);
+                    pan.add(affiche, BorderLayout.NORTH);
 		    		  		    		    		    
 		    JPanel south = new JPanel();
  
 		    pan.add(south, BorderLayout.SOUTH);
-                    south.add(ajout);
+                    south.add(ajoutPrem);
+                    south.add(ajoutDer);
+                    south.add(supp);
+                    
                     
 		   
 		    		    		    		    		   		    
