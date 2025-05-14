@@ -1,6 +1,6 @@
-package com.mycompany.projets2;
+package modele;
 
-
+import controleurs.ChefAtelier;
 import java.util.*;
 
 

@@ -1,4 +1,4 @@
-package com.mycompany.projets2;
+package modele;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -26,8 +26,17 @@ public class Gamme {
         this.materiel = materiel;
     }
     
+    public String affiche(){
+        String s = "";
+        Iterator i = this.protocole.iterator();
+        while(i.hasNext()){
+            s = s + i.next() + " -> "; 
+        }
+        return s;
+    }
+    
     public void modifier(){
-        ModGamWin fen = new ModGamWin(this);
+        vue.ModGamWin fen = new vue.ModGamWin(this);
     }
     
     public String getRef() {

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.projets2;
+package vue;
 
 /**
  *
@@ -24,18 +24,21 @@ public class ModGamWin extends JFrame  implements ActionListener{
 		//fenêtre de réponse du mode Lettres d'un joueur
 		
 		
-		private JButton ajout = new JButton("Ajouter");
+		private JButton ajoutPrem = new JButton("Ajouter au début");
+                private JButton ajoutDer = new JButton("Ajouter à la fin");
                 private JButton supp = new JButton("Supprimer");
                 private JLabel titre = new JLabel();
+                private JLabel affiche = new JLabel();
 
 		
 		
-		public ModGamWin(Gamme gamme){             
+		public ModGamWin(modele.Gamme gamme){             
                     this.setTitle(gamme.getRef());
 		    this.setSize(600, 300);
 		    this.setLocation(900, 200); 
                     
                     this.titre.setText("Machine " + gamme.getRef());
+                    this.affiche.setText(gamme.affiche());
 		    
 	
 		    
@@ -47,11 +50,15 @@ public class ModGamWin extends JFrame  implements ActionListener{
 		    pan.setBackground(Color.WHITE);
 		    pan.setLayout(new BorderLayout());
 		    pan.add(titre, BorderLayout.NORTH);
+                    pan.add(affiche, BorderLayout.NORTH);
 		    		  		    		    		    
 		    JPanel south = new JPanel();
  
 		    pan.add(south, BorderLayout.SOUTH);
-                    south.add(ajout);
+                    south.add(ajoutPrem);
+                    south.add(ajoutDer);
+                    south.add(supp);
+                    
                     
 		   
 		    		    		    		    		   		    

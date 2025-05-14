@@ -1,3 +1,5 @@
+package modele;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,19 +10,25 @@
  *
  * @author benjamin
  */
-public class Operation {
+
+import java.util.*;
+
+public class Poste extends Equipement {
+    
     private String ref;
     private String des;
-    private float duree;
-    private Equipement equipement;
+    private ArrayList<Machine> listeMachines;   
 
-    public Operation(String ref, String des, float duree, Equipement equipement) {
+    public Poste(String ref, String des, ArrayList<Machine> listeMachines) {
         this.ref = ref;
         this.des = des;
-        this.duree = duree;
-        this.equipement = equipement;
+        this.listeMachines = listeMachines;
     }
+    
+    
 
+    
+    
     public String getRef() {
         return ref;
     }
@@ -29,12 +37,8 @@ public class Operation {
         return des;
     }
 
-    public float getDuree() {
-        return duree;
-    }
-
-    public Equipement getEquipement() {
-        return equipement;
+    public ArrayList<Machine> getListeMachines() {
+        return listeMachines;
     }
 
     public void setRef(String ref) {
@@ -45,14 +49,9 @@ public class Operation {
         this.des = des;
     }
 
-    public void setDuree(float duree) {
-        this.duree = duree;
+    public void setListeMachines(ArrayList<Machine> listeMachines) {
+        this.listeMachines = listeMachines;
     }
-
-    public void setEquipement(Equipement equipement) {
-        this.equipement = equipement;
-    }
-    
     
     
     
