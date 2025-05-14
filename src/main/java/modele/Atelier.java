@@ -5,8 +5,6 @@ import java.util.*;
 
 
 
-//Problème import classe produit !!!!!!
-
 
 public class Atelier {
     

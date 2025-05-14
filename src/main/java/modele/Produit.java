@@ -2,6 +2,10 @@ package modele;
 
 
 
+
+
+
+
 public class Produit {
     private String id;
     private int Stock;
