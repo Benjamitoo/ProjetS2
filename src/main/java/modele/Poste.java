@@ -1,12 +1,10 @@
 package modele;
 
-
-
-
-
-
-
 import java.util.*;
+
+
+
+
 
 public class Poste extends Equipement {
     
