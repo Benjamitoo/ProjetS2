@@ -19,8 +19,6 @@ public class Personne {
         this.prenom = prenom;
     }
 
-    
-    
     public String getId() {
         return id;
     }

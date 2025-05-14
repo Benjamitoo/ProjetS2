@@ -13,8 +13,8 @@ import java.util.*;
 
 public class Poste extends Equipement {
     
-    private String refPoste;
-    private String dPoste;
+    private String ref;
+    private String des;
     private ArrayList<Machine> listeMachines;    
     
 }

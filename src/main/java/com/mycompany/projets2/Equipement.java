@@ -9,5 +9,7 @@ package com.mycompany.projets2;
  * @author benjamin
  */
 public class Equipement {
+    private String id;
+    
     
 }

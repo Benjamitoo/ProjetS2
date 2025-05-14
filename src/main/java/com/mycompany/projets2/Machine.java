@@ -1,5 +1,7 @@
+package com.mycompany.projets2;
+
 /*
- * To change this license header, choose License Headers in Project Properties.
+* To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -10,20 +12,42 @@
  */
 public class Machine extends Equipement {
     
-    private String refMachine;
-    private String dMachine;
+    
+    
+    private String ref;
+    private String des;
     private String type;
     private float cout;
+    
     private float x;
     private float y;
 
-    public String getRefMachine() {
-        return refMachine;
+    public Machine(String ref, String des, String type, float cout, float x, float y) {
+        this.ref = ref;
+        this.des = des;
+        this.type = type;
+        this.cout = cout;
+        this.x = x;
+        this.y = y;
+    }
+    
+    
+    
+    
+
+    
+    
+    
+    
+    public String getRef() {
+        return ref;
     }
 
-    public String getdMachine() {
-        return dMachine;
+    public String getDes() {
+        return des;
     }
+
+    
 
     public String getType() {
         return type;
@@ -41,13 +65,15 @@ public class Machine extends Equipement {
         return y;
     }
 
-    public void setRefMachine(String refMchine) {
-        this.refMachine = refMachine;
+    public void setRef(String ref) {
+        this.ref = ref;
     }
 
-    public void setdMachine(String dMachine) {
-        this.dMachine = dMachine;
+    public void setDes(String des) {
+        this.des = des;
     }
+
+    
 
     public void setType(String type) {
         this.type = type;

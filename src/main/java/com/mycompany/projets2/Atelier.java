@@ -14,6 +14,7 @@ import java.util.*;
 
 public class Atelier {
     
+    private String nom;
     private ChefAtelier CA;
     private ArrayList<Equipement> listeEquipement;
     

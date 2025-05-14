@@ -1,3 +1,5 @@
+package com.mycompany.projets2;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,6 +10,47 @@
  *
  * @author benjamin
  */
+import java.util.*;
+
 public class Gamme {
+    private String ref;
+    private LinkedList<Operation> protocole;
+    private ArrayList<Equipement> materiel;
+    
+    
+
+    public Gamme(String ref, LinkedList<Operation> protocole, ArrayList<Equipement> materiel) {
+        this.ref = ref;
+        this.protocole = protocole;
+        this.materiel = materiel;
+    }
+
+    public String getRef() {
+        return ref;
+    }
+
+    public LinkedList<Operation> getProtocole() {
+        return protocole;
+    }
+
+    public ArrayList<Equipement> getMateriel() {
+        return materiel;
+    }
+
+    public void setRef(String ref) {
+        this.ref = ref;
+    }
+
+    public void setProtocole(LinkedList<Operation> protocole) {
+        this.protocole = protocole;
+    }
+
+    public void setMateriel(ArrayList<Equipement> materiel) {
+        this.materiel = materiel;
+    }
+
+    
+    
+    
     
 }
