@@ -1,3 +1,5 @@
+package controleurs;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,17 +10,6 @@
  *
  * @author benjamin
  */
-public class Produit {
-    private String id;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-    
-    
+public class Operateur extends Personne {
     
 }

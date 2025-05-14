@@ -1,4 +1,4 @@
-package com.mycompany.projets2;
+package modele;
 
 /*
 * To change this license header, choose License Headers in Project Properties.
