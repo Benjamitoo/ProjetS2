@@ -11,6 +11,7 @@ package com.mycompany.projets2;
  * @author benjamin
  */
 import java.util.*;
+import javax.swing.*;
 
 public class Gamme {
     private String ref;
@@ -24,7 +25,12 @@ public class Gamme {
         this.protocole = protocole;
         this.materiel = materiel;
     }
-
+    
+    public modifier(){
+        
+        
+    }
+    
     public String getRef() {
         return ref;
     }
