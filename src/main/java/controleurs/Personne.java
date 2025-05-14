@@ -16,6 +16,10 @@ public class Personne {
     private String id;
     private String nom;
     private String prenom;
+    
+     public Personne() {
+        
+    }
 
     public Personne(String id, String nom, String prenom) {
         this.id = id;

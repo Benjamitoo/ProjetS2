@@ -67,9 +67,10 @@ public class Atelier {
         listeEquipement.add(e);
     }
     
-    public void removeEquipement
+    public void removeEquipement(){}
     
-    public void addProduit(Produit produit) {
+   
+    public void addProduit(Produit produit){
         listeProduit.add(produit);
     }
     
