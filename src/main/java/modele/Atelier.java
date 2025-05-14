@@ -5,7 +5,7 @@ import modele.Produit;
 import java.util.*;
 
 
-//problème méthode addProduit 
+
 
 public class Atelier {
     
