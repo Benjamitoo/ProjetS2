@@ -1,10 +1,11 @@
 package modele;
 
 import controleurs.ChefAtelier;
+import modele.Produit;
 import java.util.*;
 
 
-
+//problème méthode addProduit 
 
 public class Atelier {
     
@@ -14,13 +15,12 @@ public class Atelier {
     private ArrayList<Produit> listeProduit;
     
     
-    public Atelier(String nom, ChefAtelier CA, ArrayList<Equipement> listeEquipement, ArrayList<Produit> listeProduit){
+    public Atelier(String nom, ChefAtelier CA){
         this.nom = nom;
         this.CA = CA;
-        this.listeEquipement = listeEquipement;
-        this.listeProduit = listeProduit;
+        this.listeEquipement = new ArrayList<>();
+        this.listeProduit = new ArrayList<>();
     }
-    
     
     
     
@@ -67,9 +67,8 @@ public class Atelier {
     
     public void removeEquipement(){}
     
-   
-    public void addProduit(Produit produit){
-        listeProduit.add(produit);
+    public void addProduit(Produit p) {
+        listeProduit.add(p);
     }
     
     public void removeProduit(){
