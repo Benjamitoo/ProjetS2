@@ -1,15 +1,10 @@
 package controleurs;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author benjamin
- */
 public class ChefAtelier extends Personne {
+    
+    public ChefAtelier(String id, String n, String p) {
+        super(id, n, p);
+    }
     
 }
