@@ -20,7 +20,7 @@ package vue;
 	import javax.swing.JPanel;
         import javax.swing.JButton;
 
-public class ModGamWin extends JFrame  implements ActionListener{
+public class ModGamWin extends JFrame  implements ActionListener {
 		//fenêtre de réponse du mode Lettres d'un joueur
 		
 		
@@ -37,7 +37,7 @@ public class ModGamWin extends JFrame  implements ActionListener{
 		    this.setSize(600, 300);
 		    this.setLocation(900, 200); 
                     
-                    this.titre.setText("Machine " + gamme.getRef());
+                    this.titre.setText("Gamme " + gamme.getRef());
                     this.affiche.setText(gamme.affiche());
 		    
 	
@@ -55,9 +55,9 @@ public class ModGamWin extends JFrame  implements ActionListener{
 		    JPanel south = new JPanel();
  
 		    pan.add(south, BorderLayout.SOUTH);
-                    south.add(ajoutPrem);
-                    south.add(ajoutDer);
-                    south.add(supp);
+                    south.add(ajoutPrem);ajoutPrem.addActionListener(this);
+                    south.add(ajoutDer);ajoutDer.addActionListener(this);
+                    south.add(supp);supp.addActionListener(this);
                     
                     
 		   
@@ -67,6 +67,9 @@ public class ModGamWin extends JFrame  implements ActionListener{
 		}													 		 			
 		 
 		public void actionPerformed(ActionEvent arg0) {
+                    if (arg0.getSource()==ajoutPrem){
+                        
+                    }
 			//System.out.println(arg0.getSource());
 			
 		 }

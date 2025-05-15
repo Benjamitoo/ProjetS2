@@ -12,14 +12,30 @@ public class Atelier {
     private ChefAtelier CA;
     private ArrayList<Equipement> listeEquipement;
     private ArrayList<Produit> listeProduit;
-    
-    
-    public Atelier(String nom, ChefAtelier CA, ArrayList<Equipement> listeEquipement, ArrayList<Produit> listeProduit){
+    static private ArrayList<Operation> listeOperations;
+
+    public Atelier(String nom, ChefAtelier CA) {
         this.nom = nom;
         this.CA = CA;
-        this.listeEquipement = listeEquipement;
-        this.listeProduit = listeProduit;
+        this.listeEquipement = new ArrayList<Equipement>();
+        this.listeProduit = new ArrayList<Produit>();
+        this.listeOperations = new ArrayList<Operation>();
     }
+
+    static public ArrayList<Operation> getListeOperations() {
+        return listeOperations;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setListeOperations(ArrayList<Operation> listeOperations) {
+        this.listeOperations = listeOperations;
+    }
+    
+    
+    
     
     
     
