@@ -1,7 +1,7 @@
 package modele;
 
 
-
+import java.util.*;
 
 
 
@@ -14,6 +14,7 @@ public class Machine extends Equipement {
     private String des;
     private String type;
     private float cout;
+    private ArrayList<Evenement> listeEvenement;
     
     private float x;
     private float y;
@@ -25,11 +26,12 @@ public class Machine extends Equipement {
         this.cout = cout;
         this.x = x;
         this.y = y;
+        this.listeEvenement = new ArrayList<Evenement>();
     }
     
     
     
-    
+    //ajouter méthode getters/seter sur arraylist evenement
     
     
 
@@ -44,8 +46,6 @@ public class Machine extends Equipement {
     public String getDes() {
         return des;
     }
-
-    
 
     public String getType() {
         return type;
@@ -63,6 +63,12 @@ public class Machine extends Equipement {
         return y;
     }
 
+    public void addEvenement(Evenement e) {
+        listeEvenement.add(e);
+    }
+    
+    
+    
     public void setRef(String ref) {
         this.ref = ref;
     }
@@ -70,8 +76,6 @@ public class Machine extends Equipement {
     public void setDes(String des) {
         this.des = des;
     }
-
-    
 
     public void setType(String type) {
         this.type = type;
@@ -87,6 +91,18 @@ public class Machine extends Equipement {
 
     public void setY(float y) {
         this.y = y;
+    }
+    
+    
+    //Calcul de la fiabilité
+     public double getFiabilite() {
+        return 1.0 - ((double) evenements.size() / 840.0);
+    }
+
+     
+     //Obtenir les evenements de la machine
+    public List<Evenement> getEvenements() {
+        return evenements;
     }
     
 }
