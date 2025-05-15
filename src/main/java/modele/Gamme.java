@@ -11,7 +11,12 @@ public class Gamme {
     private LinkedList<Operation> protocole;
     private ArrayList<Equipement> materiel;
     
-    
+    public Gamme(String ref){
+        this.ref = ref;
+        this.protocole = new LinkedList<Operation>();
+        this.materiel = new ArrayList<Equipement>();
+        
+    }
 
     public Gamme(String ref, LinkedList<Operation> protocole, ArrayList<Equipement> materiel) {
         this.ref = ref;
