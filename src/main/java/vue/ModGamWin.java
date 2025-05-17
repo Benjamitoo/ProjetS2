@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package vue;
-
-/**
- *
- * @author thoma
- */
 
 
 	import java.awt.BorderLayout;
@@ -19,6 +10,7 @@ package vue;
 	import javax.swing.JLabel;
 	import javax.swing.JPanel;
         import javax.swing.JButton;
+
 
 public class ModGamWin extends JFrame  implements ActionListener {
 		//fenêtre de réponse du mode Lettres d'un joueur

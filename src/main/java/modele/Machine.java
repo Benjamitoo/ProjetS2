@@ -96,13 +96,13 @@ public class Machine extends Equipement {
     
     //Calcul de la fiabilité
      public double getFiabilite() {
-        return 1.0 - ((double) evenements.size() / 840.0);
+        return 1.0 - ((double) listeEvenement.size() / 840.0);
     }
 
      
      //Obtenir les evenements de la machine
     public List<Evenement> getEvenements() {
-        return evenements;
+        return listeEvenement;
     }
     
 }

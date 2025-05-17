@@ -1,38 +1,32 @@
 package modele;
 
 import controleurs.Operateur;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 
-//Définir type des attributs date & heure
-//Conservation attribut machine ???
 
 public class Evenement {
     
-    private date;
-    private heure;
-    //private Machine machine; ????
+    private LocalDate date;
+    private LocalTime heure;
     private Operateur operateur;
     private String cause;
     
-    public Evenement() {
+    public Evenement(LocalDate d, LocalTime h, Operateur o, String c) {
         this.date=d;
         this.heure=h;
-        //this.machine=m; ???
         this.operateur=o;
         this.cause=c;
     }
     
     
-    public getDate() {
+    public LocalDate getDate() {
         return this.date;
     }
     
-    public getHeure() {
+    public LocalTime getHeure() {
         return this.heure;
-    }
-    
-    public Machine getMachine() {
-        return this.Machine;
     }
     
     public Operateur getOperateur() {
@@ -44,16 +38,12 @@ public class Evenement {
     }
     
     
-    public void setDate(d) {
+    public void setDate(LocalDate d) {
         this.date=d;
     }
     
-    public void setHeure(h) {
-        return this.date=d;
-    }
-    
-    public void setMachine(Machine m) {
-        return this.machine=m;
+    public void setHeure(LocalTime h) {
+        this.heure=h;
     }
     
     public void setOperateur(Operateur o) {

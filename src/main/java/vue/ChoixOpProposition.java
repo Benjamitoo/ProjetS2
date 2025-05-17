@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import modele.Atelier;
 import modele.Operation;
 
-public class ChoixOpProposition extends JFrame implements ActionListener {
-
+public class ChoixOpProposition extends JFrame implements ActionListener {    
+    
     public Operation choix;
     public boolean choix_fait = false;
     private Atelier atelier;

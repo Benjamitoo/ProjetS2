@@ -91,4 +91,37 @@ public class Atelier {
     }
        
     
+    
+    
+    //POUR FIABILITÉ
+    public ArrayList<Machine> getMachines() {
+        ArrayList<Machine> machines = new ArrayList<>();
+        for (Equipement e : listeEquipement) {
+            if (e instanceof Machine) {
+                machines.add((Machine) e);
+            } else if (e instanceof Poste) {
+                machines.addAll(((Poste) e).getListeMachines());
+            }
+        }
+         return machines;
+    }
+    
+    public Machine getMachineParNom(String nom) {
+        for (Machine m : getMachines()) {
+            if (m.getDes().equals(nom)) {  // ou getRef() ou getId(), selon le champ utilisé comme nom
+                return m;
+            }
+        }
+        return null;
+    }
+    
+    
+    public List<Machine> getMachinesTrieesParFiabilite() {
+        List<Machine> machines = getMachines(); // récupère toutes les machines
+        machines.sort(Comparator.comparingDouble(Machine::getFiabilite).reversed());
+        return machines;
+    }
+    
+    
+    
 }
