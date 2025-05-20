@@ -1,5 +1,6 @@
 package controleurs;
 
+import modele.Operateur;
 import modele.Atelier;
 import modele.Machine;
 import modele.Evenement;
@@ -39,6 +40,10 @@ public class ControleurFiabilite {
             String timeStr = JOptionPane.showInputDialog("Heure de l'événement (format HH:mm) :");
             if (timeStr == null) return; // annulation
             LocalTime time = LocalTime.parse(timeStr, DateTimeFormatter.ofPattern("HH:mm"));
+            
+            String dureeStr = JOptionPane.showInputDialog("Durée de l'événement (en minutes) :");
+            if (dureeStr == null) return;
+            int duree = Integer.parseInt(dureeStr);
 
             String idOperateur = JOptionPane.showInputDialog("ID de l'opérateur :");
             if (idOperateur == null) return;
@@ -54,7 +59,7 @@ public class ControleurFiabilite {
             String cause = JOptionPane.showInputDialog("Cause de l'événement :");
             if (cause == null) return;
 
-            Evenement e = new Evenement(date, time, operateur, cause);
+            Evenement e = new Evenement(date, time, duree, operateur, cause);
             m.addEvenement(e);
 
             JOptionPane.showMessageDialog(null, "Événement ajouté avec succès !");

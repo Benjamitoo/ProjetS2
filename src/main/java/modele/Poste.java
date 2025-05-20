@@ -8,38 +8,35 @@ import java.util.*;
 
 public class Poste extends Equipement {
     
-    private String ref;
-    private String des;
     private ArrayList<Machine> listeMachines;   
 
-    public Poste(String ref, String des, ArrayList<Machine> listeMachines) {
-        this.ref = ref;
-        this.des = des;
-        this.listeMachines = listeMachines;
+    public Poste(String id, String ref) {
+        super(id, ref);
+        this.listeMachines = new ArrayList<Machine>();
     }
     
     
 
     
     
+    public String getId() {
+        return super.getId();
+    }
+
     public String getRef() {
-        return ref;
-    }
-
-    public String getDes() {
-        return des;
+        return super.getRef();
     }
 
     public ArrayList<Machine> getListeMachines() {
         return listeMachines;
     }
 
-    public void setRef(String ref) {
-        this.ref = ref;
+    public void setId(String id) {
+        super.setId(id);
     }
 
-    public void setDes(String des) {
-        this.des = des;
+    public void setDes(String ref) {
+        super.setRef(ref);
     }
 
     public void setListeMachines(ArrayList<Machine> listeMachines) {

@@ -1,7 +1,6 @@
 package modele;
 
-import controleurs.ChefAtelier;
-import modele.Produit;
+
 import java.util.*;
 
 
@@ -12,27 +11,23 @@ public class Atelier {
     private ChefAtelier CA;
     private ArrayList<Equipement> listeEquipement;
     private ArrayList<Produit> listeProduit;
-    static private ArrayList<Operation> listeOperations;
+    private ArrayList<Operation> listeOperation;
 
     public Atelier(String nom, ChefAtelier CA) {
         this.nom = nom;
         this.CA = CA;
         this.listeEquipement = new ArrayList<Equipement>();
         this.listeProduit = new ArrayList<Produit>();
-        this.listeOperations = new ArrayList<Operation>();
+        this.listeOperation = new ArrayList<Operation>();
     }
 
-    static public ArrayList<Operation> getListeOperations() {
-        return listeOperations;
-    }
+
 
     public void setNom(String nom) {
         this.nom = nom;
     }
 
-    public void setListeOperations(ArrayList<Operation> listeOperations) {
-        this.listeOperations = listeOperations;
-    }
+
     
     
     
@@ -90,6 +85,9 @@ public class Atelier {
         
     }
        
+    public void addOperation(Operation o) {
+        listeOperation.add(o);
+    }
     
     
     

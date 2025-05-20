@@ -10,6 +10,11 @@ public class Equipement {
     private String id;
     private String ref;
 
+    public Equipement(String id, String ref) {
+        this.id=id;
+        this.ref=ref;
+    }
+    
     public String getId() {
         return id;
     }

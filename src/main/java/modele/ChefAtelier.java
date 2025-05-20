@@ -1,4 +1,4 @@
-package controleurs;
+package modele;
 
 
 public class ChefAtelier extends Personne {

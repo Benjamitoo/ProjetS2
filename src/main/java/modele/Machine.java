@@ -10,7 +10,6 @@ public class Machine extends Equipement {
     
     
     
-    private String ref;
     private String des;
     private String type;
     private float cout;
@@ -19,8 +18,8 @@ public class Machine extends Equipement {
     private float x;
     private float y;
 
-    public Machine(String ref, String des, String type, float cout, float x, float y) {
-        this.ref = ref;
+    public Machine(String id, String ref, String des, String type, float cout, float x, float y) {
+        super(id, ref);
         this.des = des;
         this.type = type;
         this.cout = cout;
@@ -39,8 +38,12 @@ public class Machine extends Equipement {
     
     
     
+    public String getId() {
+        return super.getId();
+    }
+    
     public String getRef() {
-        return ref;
+        return super.getRef();
     }
 
     public String getDes() {
@@ -69,8 +72,12 @@ public class Machine extends Equipement {
     
     
     
+    public void setId(String  id) {
+        super.setId(id);
+    }
+    
     public void setRef(String ref) {
-        this.ref = ref;
+        super.setRef(ref);
     }
 
     public void setDes(String des) {
@@ -95,9 +102,15 @@ public class Machine extends Equipement {
     
     
     //Calcul de la fiabilité
-     public double getFiabilite() {
-        return 1.0 - ((double) listeEvenement.size() / 840.0);
+    public double getFiabilite() {
+        int totalDureePannes = 0;
+        for (Evenement e : listeEvenement) {
+            totalDureePannes += e.getDuree();
+        }
+        double dureeFonctionnement = 840.0; // à adapter si nécessaire
+        return 1.0 - (totalDureePannes / dureeFonctionnement);
     }
+
 
      
      //Obtenir les evenements de la machine

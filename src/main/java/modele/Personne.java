@@ -1,5 +1,5 @@
- package controleurs;
-
+ package modele;
+//Changer package pour Modèle
 
 public class Personne {
     private String id;

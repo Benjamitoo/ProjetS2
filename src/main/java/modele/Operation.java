@@ -9,10 +9,10 @@ package modele;
 public class Operation {
     private String ref;
     private String des;
-    private float duree;
+    private int duree;
     private Equipement equipement;
 
-    public Operation(String ref, String des, float duree, Equipement equipement) {
+    public Operation(String ref, String des, int duree, Equipement equipement) {
         this.ref = ref;
         this.des = des;
         this.duree = duree;
@@ -27,7 +27,7 @@ public class Operation {
         return des;
     }
 
-    public float getDuree() {
+    public int getDuree() {
         return duree;
     }
 
@@ -43,7 +43,7 @@ public class Operation {
         this.des = des;
     }
 
-    public void setDuree(float duree) {
+    public void setDuree(int duree) {
         this.duree = duree;
     }
 
